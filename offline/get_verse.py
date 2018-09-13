@@ -4,24 +4,24 @@ from random import randint
 import re
 
 
-# def get_verse_list(feeling):
-#     # url = "https://www.openbible.info/topics/" + feeling
-#     url = "https://www.openbible.info/topics/" + feeling
-#     html_content = urllib.request.urlopen(url).read()
-#
-#     soup = BeautifulSoup(html_content, "html.parser")
-#     list_addr = soup.find_all("a", {"class": "bibleref"})
-#
-#     print("found ", len(list_addr), "addresses")
-#
-#     addr_chosen = randint(0, len(list_addr))
-#
-#     print("addr_chosen:", addr_chosen)
-#
-#     addr_str = list_addr[addr_chosen].string
-#
-#     # print(addr_str)
-#     return addr_str
+def get_verse_list(feeling):
+    # url = "https://www.openbible.info/topics/" + feeling
+    url = "https://www.openbible.info/topics/" + feeling
+    html_content = urllib.request.urlopen(url).read()
+
+    soup = BeautifulSoup(html_content, "html.parser")
+    list_addr = soup.find_all("a", {"class": "bibleref"})
+
+    print("found ", len(list_addr), "addresses")
+
+    addr_chosen = randint(0, len(list_addr))
+
+    print("addr_chosen:", addr_chosen)
+
+    addr_str = list_addr[addr_chosen].string
+
+    # print(addr_str)
+    return addr_str
 
 
 # def post_process_verse(verse_content):
@@ -127,11 +127,11 @@ def multi_verse_lookup(addr_str, version):
     return verse_content_sum, verse_address_sum
 
 
-# def get_verse_by_feeling(feeling):
-#     addr_str = get_verse_list(feeling)
-#     verse_content, addr_vi = multi_verse_lookup(addr_str)
-#     wraped_verse = "\"" + verse_content + "\"" + " - " + addr_vi
-#     return wraped_verse
+def get_verse_by_feeling(feeling):
+    addr_str = get_verse_list(feeling)
+    verse_content, addr_vi = multi_verse_lookup(addr_str)
+    wraped_verse = "\"" + verse_content + "\"" + " - " + addr_vi
+    return wraped_verse
 
 # if __name__ == "__main__":
 #     # app.run()
