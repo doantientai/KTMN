@@ -1,0 +1,24 @@
+Sun, 19 Aug 2018 20:25:54	1761738697195786	I-sai-a 55	Motivation	like
+Sun, 19 Aug 2018 20:26:12	1761738697195786	I Ti-mô-thê 1	Confident	dislike
+Sun, 19 Aug 2018 20:28:19	1761738697195786	Lu-ca 10:27	Confident	like
+Sun, 19 Aug 2018 20:28:39	1761738697195786	Rô-ma 6:23	Confident	dislike
+Sun, 19 Aug 2018 20:33:27	1761738697195786	Thánh Thi 143:8	Trust	like
+Sun, 19 Aug 2018 20:33:44	1761738697195786	II Cô-rinh-tô 6:10	Joyful	like
+Sun, 19 Aug 2018 20:34:07	1761738697195786	II Ti-mô-thê 1	Scared	like
+Mon, 20 Aug 2018 16:16:20	1761738697195786	Châm Ngôn 12:16	Angry	like
+Mon, 20 Aug 2018 16:16:39	1761738697195786	Giăng 14:23	Loving	like
+Mon, 20 Aug 2018 16:16:59	1761738697195786	Lu-ca 15:7	Joyful	like
+Mon, 20 Aug 2018 18:52:47	1761738697195786	I Cô-rinh-tô 6:13	Sinful	like
+Mon, 20 Aug 2018 18:56:07	1761738697195786	Khải Huyền 1:17	Scared	like
+Sat, 01 Sep 2018 17:01:05	1761738697195786	Thánh Thi 30:5	Joyful	like
+Sat, 01 Sep 2018 17:01:25	1761738697195786	Châm Ngôn 3:5-6	Trust	like
+Sat, 01 Sep 2018 17:01:49	1761738697195786	Ga-la-ti 5:5-12	Motivated	like
+Sat, 01 Sep 2018 17:28:01	1761738697195786	Thánh Thi 30:11	Vui	like
+Sat, 01 Sep 2018 17:28:28	1761738697195786	Thánh Thi 37	Trông cậy	dislike
+Sat, 01 Sep 2018 17:28:48	1761738697195786	Thánh Thi 40:4	Trông cậy	like
+Sat, 01 Sep 2018 17:42:04	1761738697195786	I-sai-a 35:10	Vui	like
+Sat, 01 Sep 2018 17:42:25	1761738697195786	Ma-thi-ơ 6:26	Lo lắng	like
+Sat, 01 Sep 2018 17:42:40	1761738697195786	II Cô-rinh-tô 9:7	Có động lực	dislike
+Sat, 01 Sep 2018 21:49:43	1765746906869954	Thánh Thi 34:17-20	Có động lực	like
+Sat, 01 Sep 2018 21:50:01	1765746906869954	Giu-đe 24	Vui	like
+Mon, 03 Sep 2018 00:53:02	1823289881111828	Thánh Thi 16:11	Vui	like
