@@ -3,7 +3,6 @@ import random
 from flask import Flask, request
 from pymessenger.bot import Bot
 from flask_sslify import SSLify
-import get_verse
 
 app = Flask(__name__)
 sslify = SSLify(app)

@@ -107,6 +107,7 @@ def verify_fb_token(token_sent):
         return request.args.get("hub.challenge")
     return 'Invalid verification token'
 
+
 def handle_input_emo(recipient_id, response):
     global current_feeling
     global current_verse
@@ -124,7 +125,7 @@ def handle_input_emo(recipient_id, response):
                 break
 
         # bot.send_text_message(recipient_id, "DEBUG: got list")
-        number_rand = randint(0,len(list_verse_match_emotion))
+        number_rand = randint(0, len(list_verse_match_emotion))
         verse_string = list_verse_match_emotion[number_rand]
 
         ### get current verse for feedback purpose
