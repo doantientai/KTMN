@@ -12,7 +12,7 @@ def get_verse_list(keyword):
     soup = BeautifulSoup(html_content, "html.parser")
     list_addr = soup.find_all("a", {"class": "bibleref"})
 
-    print("found ", len(list_addr), "addresses")
+    print("found ", len(list_addr), "addresses for keyword", keyword)
 
     addr_chosen = randint(0, len(list_addr))
 
@@ -22,6 +22,31 @@ def get_verse_list(keyword):
 
     # print(addr_str)
     return addr_str
+
+
+def get_verses_by_keyword(keyword):
+    # url = "https://www.openbible.info/topics/" + feeling
+    url = "https://www.openbible.info/topics/" + keyword
+    html_content = urllib.request.urlopen(url).read()
+
+    soup = BeautifulSoup(html_content, "html.parser")
+    list_addr_html = soup.find_all("a", {"class": "bibleref"})
+
+    print("found ", len(list_addr_html), "addresses for keyword", keyword)
+
+    list_addr_str = []
+
+    for addr in list_addr_html:
+        list_addr_str.append(addr.string)
+
+    # addr_chosen = randint(0, len(list_addr))
+    #
+    # print("addr_chosen:", addr_chosen)
+    #
+    # addr_str = list_addr[addr_chosen].string
+    #
+    # # print(addr_str)
+    return list_addr_str
 
 
 # def post_process_verse(verse_content):
