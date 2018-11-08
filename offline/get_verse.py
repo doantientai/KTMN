@@ -4,9 +4,9 @@ from random import randint
 import re
 
 
-def get_verse_list(feeling):
+def get_verse_list(keyword):
     # url = "https://www.openbible.info/topics/" + feeling
-    url = "https://www.openbible.info/topics/" + feeling
+    url = "https://www.openbible.info/topics/" + keyword
     html_content = urllib.request.urlopen(url).read()
 
     soup = BeautifulSoup(html_content, "html.parser")
