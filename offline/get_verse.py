@@ -135,6 +135,8 @@ def multi_verse_lookup(addr_str, version):
             if (int(sentence_begin) < int(sentence_end)) and (int(sentence_end) - int(sentence_begin) <= 5):
                 for number in range(int(sentence_begin), int(sentence_end) + 1):
                     verse_content, addr_vi = verse_lookup(addr_chapter + ":" + str(number), version=version)
+                    if len(verse_content) < 10:  # if a verse is too short
+                        return None, None
                     verse_content_sum = verse_content_sum + " " + verse_content
 
                     if not got_book_chapter:
@@ -149,6 +151,9 @@ def multi_verse_lookup(addr_str, version):
 
         else:
             verse_content_sum, verse_address_sum = verse_lookup(addr_str, version=version)
+
+            if len(verse_content_sum) < 10:
+                return None, None
 
         # print("verse_content_sum", verse_content_sum)
         # print("verse_address_sum", verse_address_sum)

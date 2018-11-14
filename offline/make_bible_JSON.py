@@ -89,9 +89,9 @@ def test():
     with open(bible_version + '.json', encoding='utf-8') as f:
         bible_loaded = json.load(f)
 
-    exit()
+    # exit()
 
 
 if __name__ == "__main__":
-    # main()
-    test()
+    main()
+    # test()
