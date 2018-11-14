@@ -15,6 +15,9 @@
 
 from get_verse import get_verses_by_keyword, multi_verse_lookup
 import json
+import codecs
+
+bible_version = "VIET"
 
 feelings_keywords = {
     "excited": ["encourage", "strength", "determination"],
@@ -52,7 +55,7 @@ def combine_lists(list_1, list_2):
 
 
 def main():
-    bible_version = "VIET"
+
     bible = {}
     for feeling, keywords in feelings_keywords.items():
         print("-----------------------------\nFeeling:", feeling)
@@ -65,16 +68,30 @@ def main():
         print(keywords)
 
         # for addr in list_addr_total:
-        for addr in list_addr_total[:2]:
+        # for addr in list_addr_total[:1]:
+        for addr in list_addr_total:
             verse_content, addr_vi = multi_verse_lookup(addr, version=bible_version)
-            wraped_verse = "\"" + verse_content + "\"" + " - " + addr_vi
-            feeling_verses.append(wraped_verse)
+            if verse_content and addr_vi:
+                wraped_verse = "\"" + verse_content + "\"" + " - " + addr_vi
+                feeling_verses.append(wraped_verse)
+            else:
+                print("skip", addr)
         bible[feeling] = feeling_verses
         # exit()
 
-    with open(bible_version+'.json', 'w') as fp:
-        json.dump(bible, fp)
+    # with open(bible_version+'.json', 'w') as fp:
+    #     json.dump(bible, fp)
+    with codecs.open(bible_version + '.json', 'w', encoding='utf-8') as f:
+        json.dump(bible, f, ensure_ascii=False)
+
+
+def test():
+    with open(bible_version + '.json', encoding='utf-8') as f:
+        bible_loaded = json.load(f)
+
+    exit()
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    test()
